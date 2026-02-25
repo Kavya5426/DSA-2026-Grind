@@ -1,31 +1,43 @@
 """
-Problem: Two Sum
+Problem: Maximum Subarray
 Platform: LeetCode
-Difficulty: Easy
-Date: 23-02-2026
+Difficulty: Medium
+Date: 26-02-2026
 
 Approach:
-- Iterate through the array using two nested loops.
-- For each element nums[i], check every element after it nums[j].
-- If nums[i] + nums[j] equals the target, return their indices.
-- This ensures all possible pairs are checked.
+- Use Kadane’s Algorithm to find the maximum sum of a contiguous subarray.
+- Maintain a variable current_sum to track the running subarray sum.
+- Traverse the array:
+    • Add current element to current_sum.
+    • Update maxsum if current_sum is greater.
+    • If current_sum becomes negative, reset it to 0
+      because a negative sum will reduce future subarray sums.
+- Return maxsum at the end.
 
-Time Complexity: O(n^2)
+Time Complexity: O(n)
+- The array is traversed once.
+
 Space Complexity: O(1)
+- Only constant variables are used (current_sum and maxsum).
 """
 
+
 class Solution(object):
-    def twoSum(self, nums, target):
+    def maxSubArray(self, nums):
         """
         :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
+        :rtype: int
         """
-        n=len(nums)
-        for i in range(n):
-            for j in range(i+1,n):
-                if nums[i]+nums[j]==target:
-                    return (i,j);
-        
+        current_sum = 0
+        maxsum = float('-inf')
 
-        
+        for i in range(len(nums)):
+            current_sum += nums[i]
+
+            if current_sum > maxsum:
+                maxsum = current_sum
+
+            if current_sum < 0:
+                current_sum = 0
+
+        return maxsum
