@@ -2,7 +2,7 @@
 Problem: Move Zeroes
 Platform: LeetCode
 Difficulty: Easy
-Date: 27-02-2026
+Date: 26-02-2026
 
 Approach:
 - Use a pointer `ins_pos` to track the position where the next non-zero element should be placed.
