@@ -1,39 +1,43 @@
 """
-Problem: Valid Palindrome
+Problem: Binary Search
 Platform: LeetCode
 Difficulty: Easy
-Date: 01-03-2026
+Date: 04-03-2026
 
 Approach:
-- Create a new string `clean` to store only alphanumeric characters.
-- Traverse the input string:
-    • If a character is alphanumeric, convert it to lowercase
-      and append it to `clean`.
-- After cleaning the string, compare it with its reverse.
-- If both are equal, the string is a palindrome.
-- Otherwise, return False.
+- Use Binary Search to efficiently find the target in a sorted array.
+- Maintain two pointers:
+    • left → starting index of search space
+    • right → ending index of search space
+- Repeat while left <= right:
+    • Calculate mid index.
+    • If nums[mid] equals target, return mid.
+    • If target is smaller than nums[mid], search the left half
+      by updating right = mid - 1.
+    • Otherwise search the right half by updating left = mid + 1.
+- If the loop finishes without finding the target,
+  return -1.
 
-Time Complexity: O(n)
-- We traverse the string once to clean it.
-- Reversing the string also takes O(n).
-- Overall complexity remains linear.
+Time Complexity: O(log n)
+- Each iteration halves the search space.
 
-Space Complexity: O(n)
-- A new string `clean` is created to store filtered characters.
+Space Complexity: O(1)
+- Only constant extra variables are used.
 """
 
 class Solution(object):
-    def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        clean=""
-        for char in s:
-            if char.isalnum():
-                clean+=char.lower()
-        return clean==clean[::-1]
-    
-#Space complexity can be optimized to O(1) by using two pointers instead of creating a new string.
-    
-        
+    def search(self, nums, target):
+        left = 0
+        right = len(nums) - 1
+
+        while left <= right:
+            mid = (left + right) // 2 #use '//' in py3 for integer division.'/' gives float result in py3
+
+            if nums[mid] == target:
+                return mid
+            elif target < nums[mid]:
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return -1
