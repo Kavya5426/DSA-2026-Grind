@@ -29,7 +29,7 @@ DSA-2026-Grind
 | # | Problem | Platform | Pattern | Solution |
 |---|--------|---------|--------|---------|
 | 1 | Two Sum | LeetCode | Arrays / Hashing | [Solution](Arrays/01_Two_Sum.py) |
-| 2 | Best Time to Buy and Sell Stock | LeetCode | Arrays | [Solution](Arrays/02_Best_Time_To_Buy_Sell_Stock.py) |
+| 2 | Best Time to Buy and Sell Stock | LeetCode | Arrays | [Solution](Arrays/02_Best_Time_To_Buy_And_Sell_Stock.py) |
 | 3 | Contains Duplicate | LeetCode | Hashing | [Solution](Hashing/03_Contains_Duplicate.py) |
 | 4 | Valid Anagram | LeetCode | Hashing | [Solution](Hashing/04_Valid_Anagram.py) |
 | 5 | Maximum Subarray | LeetCode | Kadane / Arrays | [Solution](Arrays/05_Maximum_Subarray.py) |
@@ -43,7 +43,7 @@ DSA-2026-Grind
 | 13 | Simple Array Sum | HackerRank | Arrays | [Solution](Arrays/13_Simple_Array_Sum.py) |
 | 14 | Breaking the Records | HackerRank | Arrays | [Solution](Arrays/14_Breaking_the_Records.py) |
 | 15 | Kangaroo | HackerRank | Math | [Solution](Arrays/15_Number_Line_Jumps_Kangaroo.py) |
-| 16 | Staircase | HackerRank | Pattern | [Solution](Basics/16_Staircase.py) |
+| 16 | Staircase | HackerRank | Pattern | [Solution](Arrays/16_Staircase.py) |
 
 ---
 
