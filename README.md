@@ -7,7 +7,7 @@ This repository documents my daily Data Structures & Algorithms practice as I pr
 ## Repository Structure
 
 Problems are organized by DSA patterns/topics.
-...
+```
 DSA-2026-Grind
 │
 ├── Arrays
@@ -21,7 +21,7 @@ DSA-2026-Grind
 ├── Graphs
 ├── Dynamic_Programming
 ├── Greedy
-...
+```
 ---
 
 ## 📚 Problem Index
