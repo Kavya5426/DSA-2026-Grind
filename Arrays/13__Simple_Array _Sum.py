@@ -2,7 +2,7 @@
 Problem: Simple Array Sum
 Platform: HackerRank (MoonBlue Challenge)
 Difficulty: Easy
-Date: 05-03-2026
+Date: 07-03-2026
 
 Approach:
 - Initialize a variable `total` to store the sum.
@@ -15,6 +15,7 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 - No extra space is used besides the variable `total`.
 """
+#Mount Blue Challenge: 2
 
 import math
 import os

@@ -20,6 +20,7 @@ Space Complexity: O(n)
 - In the worst case, all socks have different colors,
   so the dictionary stores n elements.
 """
+#mount Blue Challenge: 1
 
 #!/bin/python3
 
