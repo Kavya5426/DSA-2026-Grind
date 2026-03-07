@@ -24,7 +24,7 @@ DSA-2026-Grind
 ```
 ---
 
-## 📚 Problem Index
+##  Problem Index
 
 | # | Problem | Platform | Pattern | Solution |
 |---|--------|---------|--------|---------|
@@ -56,13 +56,5 @@ Platforms used:
 - HackerRank
 
 ---
-
-##  Goal
-
-Solve **300+ problems** before interviews.
-
----
-
-##  Philosophy
 
 Consistency > Intensity
