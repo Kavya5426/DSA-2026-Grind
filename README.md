@@ -41,7 +41,7 @@ DSA-2026-Grind
 | 11 | Search Insert Position | LeetCode | Binary Search | [Solution](Binary_Search/11_Search_Insert_Position.py) |
 | 12 | Sock Merchant | HackerRank | Hashing | [Solution](Hashing/12_Sock_Merchant.py) |
 | 13 | Simple Array Sum | HackerRank | Arrays | [Solution](Arrays/13_Simple_Array_Sum.py) |
-| 14 | Breaking the Records | HackerRank | Arrays | [Solution](Arrays/14_Breaking_the_Records.py) |
+| 14 | Breaking the Records | HackerRank | Arrays | [Solution](Arrays/14_Breaking_The_Records.py) |
 | 15 | Kangaroo | HackerRank | Math | [Solution](Arrays/15_Number_Line_Jumps_Kangaroo.py) |
 | 16 | Staircase | HackerRank | Pattern | [Solution](Arrays/16_Staircase.py) |
 
