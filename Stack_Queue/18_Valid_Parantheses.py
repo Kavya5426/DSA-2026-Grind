@@ -69,7 +69,6 @@ Space Complexity: O(n)
 - In the worst case, all characters may be opening brackets stored in the stack.
 """
     
-    
     class Solution(object):
         def isValid(self, s):
 
